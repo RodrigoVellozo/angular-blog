@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './menu-title.component.html',
-  styleUrl: './menu-title.component.scss'
+  styleUrls: ['./menu-title.component.scss','./menu-title-responsive.component.scss']
 })
 export class MenuTitleComponent {
 

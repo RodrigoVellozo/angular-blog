@@ -2,18 +2,16 @@
     <app-menu-bar></app-menu-bar>
 </header>
 
-
-
 <app-menu-title></app-menu-title>
 
 <div class="container__articles">
     <div class="articles__main">
-        <app-big-card></app-big-card>
+        <app-big-card [photoCover]="photoCoverBig" [cardTitle]="cardtitleBig" [cardDescription]="carddescription"></app-big-card>
     </div>
 
     <div class="articles__others">
-        <app-small-card></app-small-card>
-        <app-small-card></app-small-card>
-        <app-small-card></app-small-card>
+        <ng-container *ngFor="let data of smallCardsData">
+            <app-small-card [photoCover]="data.photoCover" [cardTitle]="data.cardTitle"></app-small-card>
+        </ng-container>
     </div>
 </div>

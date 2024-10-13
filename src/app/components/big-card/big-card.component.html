@@ -1,26 +1,22 @@
 <div class="container__big-card">
   <div class="big-card__picture">
     <img
-      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdvtDoNLCuGbLnuLew7rfr8VKi0CC8zgmiVg&s"
+      [src]="photoCover"
       height="200px"
-      alt=""
+      alt="Card Image"
     />
   </div>
 
   <div class="big-card__title">
     <h1>
-        <a href="#">Saiu a nova versao do Angular</a>
+        <a href="#">{{cardTitle}}</a>
     </h1>
   </div>
 
   <div class="big-card__description">
     <p>
         <a href="#">
-            A nova versao do Angular foi lançada e traz novas funcionalidades e
-            melhorias Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius
-            accusamus labore commodi blanditiis repudiandae accusantium eaque amet,
-            dolore repellendus suscipit minus in libero sunt sapiente reprehenderit
-            totam error neque. Repellendus.
+            {{cardDescription}}
         </a>
     </p>
   </div>
